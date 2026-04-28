@@ -43,3 +43,13 @@ const cercaGioco = (testo) => {
         g.studio.toLowerCase().includes(t)
     );
 };
+
+module.exports = {
+    creaGioco,
+    aggiungiGioco,
+    rimuoviGioco,
+    ottieniTutti,
+    filtraPer,
+    ordinaPer,
+    cercaGioco
+};
