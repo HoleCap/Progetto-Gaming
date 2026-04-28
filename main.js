@@ -28,13 +28,13 @@ function Menu(){
                 
                 const nuovoGioco = utils.creaGioco(t, p, g, a, s);
                 utils.aggiungiGioco(nuovoGioco);
-                console.log("Ottimo! Gioco aggiunto.");
+                console.log("SISTEMA: Gioco aggiunto.");
                 break;
 
             case "2":
                 const titoloCanc = prompt("Titolo del gioco da rimuovere: ");
                 const rimosso = utils.rimuoviGioco(titoloCanc);
-                console.log(rimosso ? "Gioco rimosso con successo." : "Errore: gioco non trovato.");
+                console.log(rimosso ? "SISTEMA: Gioco rimosso con successo." : "SISTEMA: Gioco non trovato.");
                 break;
 
             case "3":
@@ -54,17 +54,17 @@ function Menu(){
                 break;
 
             case "6":
-                const query = prompt("Inserisci parte del titolo o dello studio: ");
-                console.table(utils.cercaGioco(query));
+                const parte = prompt("Inserisci parte del titolo o dello studio: ");
+                console.table(utils.cercaGioco(parte));
                 break;
 
             case "0":
-                console.log("Chiusura programma...");
+                console.log("SISTEMA: Chiusura programma...");
                 continua = false;
                 break;
 
             default:
-                console.log("Opzione errata, riprova!");
+                console.log("SISTEMA: Opzione errata, riprova!");
         }
     }
 }
