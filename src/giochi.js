@@ -19,3 +19,7 @@ function rimuoviGioco(titoloDaCancellare) {
     collezione = collezione.filter(g => g.titolo.toLowerCase() !== titoloDaCancellare.toLowerCase());
     return collezione.length < lunghezzaIniziale;
 }
+
+function ottieniTutti() {
+    return collezione;
+}
