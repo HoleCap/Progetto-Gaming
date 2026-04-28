@@ -35,3 +35,11 @@ function ordinaPer(proprieta) {
         return 0;
     });
 }
+
+const cercaGioco = (testo) => {
+    const t = testo.toLowerCase();
+    return collezione.filter(g => 
+        g.titolo.toLowerCase().includes(t) || 
+        g.studio.toLowerCase().includes(t)
+    );
+};
