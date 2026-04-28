@@ -27,3 +27,11 @@ function ottieniTutti() {
 const filtraPer = (proprieta, valore) => {
     return collezione.filter(g => g[proprieta].toLowerCase() === valore.toLowerCase());
 };
+
+function ordinaPer(proprieta) {
+    return [...collezione].sort((a, b) => {
+        if (a[proprieta] < b[proprieta]) return -1;
+        if (a[proprieta] > b[proprieta]) return 1;
+        return 0;
+    });
+}
