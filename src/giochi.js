@@ -10,3 +10,6 @@ const creaGioco = (titolo, piattaforma, genere, anno, studio) => {
     };
 };
 
+function aggiungiGioco(gioco) {
+    collezione.push(gioco);
+}
