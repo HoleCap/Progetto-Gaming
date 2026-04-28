@@ -23,3 +23,7 @@ function rimuoviGioco(titoloDaCancellare) {
 function ottieniTutti() {
     return collezione;
 }
+
+const filtraPer = (proprieta, valore) => {
+    return collezione.filter(g => g[proprieta].toLowerCase() === valore.toLowerCase());
+};
